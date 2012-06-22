@@ -6,7 +6,7 @@ Requires at least: 3.1
 Tested up to: 3.4
 Stable tag: trunk
 
-The Laughing Squid Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
+The Laughing Squid Dashboard Widget provides status information within your dashboard from the Laughing Squid Web Hosting status page.
 
 == Description ==
 
