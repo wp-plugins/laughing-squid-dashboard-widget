@@ -6,11 +6,11 @@ Requires at least: 3.1
 Tested up to: 3.4
 Stable tag: trunk
 
-The Laughing Squid Dashboard Widget will provide you with news from the status blog from within your WordPress Dashboard.
+The Laughing Squid Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
 
 == Description ==
 
-The Laughing Squid Dashboard Widget will provide you with news from the status blog from within your WordPress Dashboard.
+The Laughing Squid Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
 
 == Installation ==
 
@@ -19,6 +19,9 @@ The Laughing Squid Dashboard Widget will provide you with news from the status b
 3. Enjoy!, there are no settings for this.
 
 == Changelog ==
+
+= 1.1 =
+* Fixed some grammatical errors.
 
 = 1.0 =
 * Initial release.

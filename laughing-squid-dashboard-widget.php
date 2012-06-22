@@ -2,8 +2,8 @@
 /*
 Plugin Name: Laughing Squid Dashboard Widget
 Plugin URI: http://www.laughingsquid.us
-Description: The Laughing Squid Dashboard Widget will provide you with news from the status blog from within your WordPress Dashboard.
-Version: 1.0
+Description: The Laughing Squid Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
+Version: 1.1
 Author: Shelby DeNike
 Author URI: http://www.sd3labs.com
 */
@@ -56,7 +56,7 @@ function ls_rss_dashboard_widget_function() {
 
 //Function to add the rss feed to the dashboard.
 function ls_rss_add_dashboard_widget() {
-	wp_add_dashboard_widget('ls_rss_dashboard_widget', 'Laughing Squid News', 'ls_rss_dashboard_widget_function');
+	wp_add_dashboard_widget('ls_rss_dashboard_widget', 'Laughing Squid Web Hosting Status', 'ls_rss_dashboard_widget_function');
 }
 
 //Action that calls the function that adds the widget to the dashboard.
