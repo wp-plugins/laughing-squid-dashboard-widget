@@ -1,16 +1,16 @@
-=== Laughing Squid Dashboard Widget ===
+=== Laughing Squid Web Hosting Widget ===
 Contributors: sdenike
 Donate link: http://sd3labs.com/
-Tags: news, hosting, dashboard
+Tags: news, hosting, dashboard, widget
 Requires at least: 3.1
 Tested up to: 3.4
 Stable tag: trunk
 
-The Laughing Squid Dashboard Widget provides status information within your dashboard from the Laughing Squid Web Hosting status page.
+The Laughing Squid Web Hosting Widget provides status information within your dashboard from the Laughing Squid Web Hosting status page.
 
 == Description ==
 
-The Laughing Squid Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
+The Laughing Squid Web Hosting Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
 
 == Installation ==
 
@@ -19,6 +19,9 @@ The Laughing Squid Dashboard Widget provides status information within your Word
 3. Enjoy!, there are no settings for this.
 
 == Changelog ==
+
+= 1.2 =
+* Updated plugin name.
 
 = 1.1 =
 * Fixed some grammatical errors.
