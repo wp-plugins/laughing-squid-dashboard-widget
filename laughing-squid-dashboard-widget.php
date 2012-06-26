@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Laughing Squid Web Hosting Widget
+Plugin Name: Laughing Squid Web Hosting News & Status WordPress Dashboard Widget
 Plugin URI: http://www.laughingsquid.us
-Description: The Laughing Squid Web Hosting Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting status page</a>.
+Description: The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting News & Status blog</a>.
 Version: 1.2
 Author: Shelby DeNike
 Author URI: http://www.sd3labs.com
