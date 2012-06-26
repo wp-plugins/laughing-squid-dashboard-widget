@@ -18,6 +18,16 @@ The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Enjoy!, there are no settings for this.
 
+== Frequently Asked Questions ==
+
+= Is this part of the Laughing Squid Blog? =
+
+Nope, this is to provide status updates to the <a href="http://laughingsquid.us">Laughing Squid Web Hosting</a> customers that are using WordPress.
+
+== Screenshots ==
+
+1. Dashboard Widget in action
+
 == Changelog ==
 
 = 1.2 =
