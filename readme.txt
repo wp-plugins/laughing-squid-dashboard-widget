@@ -30,6 +30,9 @@ Nope, this is to provide status updates to the <a href="http://laughingsquid.us"
 
 == Changelog ==
 
+= 1.3 =
+* Updated the feed URL.
+
 = 1.2 =
 * Updated plugin name.
 
@@ -38,4 +41,3 @@ Nope, this is to provide status updates to the <a href="http://laughingsquid.us"
 
 = 1.0 =
 * Initial release.
-

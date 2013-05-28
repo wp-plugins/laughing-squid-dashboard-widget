@@ -2,16 +2,15 @@
 /*
 Plugin Name: Laughing Squid Web Hosting News & Status WordPress Dashboard Widget
 Plugin URI: http://www.laughingsquid.us
-Description: The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquid.wordpress.com/">Laughing Squid Web Hosting News & Status blog</a>.
-Version: 1.2
+Description: The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquidhosting.wordpress.com/">Laughing Squid Web Hosting News & Status blog</a>.
+Version: 1.3
 Author: Shelby DeNike
 Author URI: http://www.sd3labs.com
 */
 
-
 //Function to display the RSS feed.
 function ls_rss_dashboard_widget_function() {
-	$rss = fetch_feed( "http://laughingsquid.wordpress.com/feed/" );
+	$rss = fetch_feed( "http://laughingsquidhosting.wordpress.com/" );
 
 	if ( is_wp_error($rss) ) {
 		if ( is_admin() || current_user_can('manage_options') ) {
