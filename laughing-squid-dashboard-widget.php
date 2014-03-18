@@ -3,7 +3,7 @@
 Plugin Name: Laughing Squid Web Hosting News & Status WordPress Dashboard Widget
 Plugin URI: http://www.laughingsquid.us
 Description: The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquidhosting.wordpress.com/">Laughing Squid Web Hosting News & Status blog</a>.
-Version: 1.3
+Version: 1.4
 Author: Shelby DeNike
 Author URI: http://www.sd3labs.com
 */
@@ -60,4 +60,53 @@ function ls_rss_add_dashboard_widget() {
 
 //Action that calls the function that adds the widget to the dashboard.
 add_action('wp_dashboard_setup', 'ls_rss_add_dashboard_widget');
+
+# Custom Laughing Squid Menu
+class LSHostingMenu {
+
+	function LSHostingMenu() {
+		add_action( 'admin_bar_menu', array( $this, "lshosting_links" ), 31 );
+	}
+	function add_root_menu($name, $id, $href = FALSE)
+	{
+		global $wp_admin_bar;
+		if ( !is_super_admin() || !is_admin_bar_showing() )
+		return;
+
+		$wp_admin_bar->add_menu( array(
+		'id'   => $id,
+		'meta' => array(),
+		'title' => $name,
+		'href' => $href ) );
+	}
+
+	function add_sub_menu($name, $link, $root_menu, $id, $meta = FALSE)
+	{
+		global $wp_admin_bar;
+		if ( ! is_super_admin() || ! is_admin_bar_showing() )
+		return;
+
+		$wp_admin_bar->add_menu( array(
+		'parent' => $root_menu,
+		'id' => $id,
+		'title' => $name,
+		'href' => $link,
+		'meta' => $meta
+		) );
+	}
+
+	function lshosting_links()
+	{
+		$this->add_root_menu( 'Laughing Squid', "lshostingl");
+		$this->add_sub_menu( 'Support', "https://laughingsquid.zendesk.com", "lshostingl", "lshostingls" );
+		$this->add_sub_menu( 'Billing', "https://laughingsquid.freshbooks.com", "lshostingl", "lshostinglb" );
+		$this->add_sub_menu( 'Cloud Control Panel', "https://websitesettings.com", "lshostingl", "lshostinglc" );
+		$this->add_sub_menu( 'Email Admin', "https://admin.emailsrvr.com", "lshostingl", "lshostingle" );
+	}
+}
+add_action( "init", "LSHostingMenuInit" );
+function LSHostingMenuInit() {
+	global $LSHostingMenu;
+	$LSHostingMenu = new LSHostingMenu();
+}
 ?>
