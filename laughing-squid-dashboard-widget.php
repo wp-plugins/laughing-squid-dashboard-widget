@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Laughing Squid Web Hosting News & Status WordPress Dashboard Widget
-Plugin URI: http://www.laughingsquid.us
+Plugin URI: https://www.laughingsquid.us
 Description: The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your WordPress dashboard pulled directly from the <a href="http://laughingsquidhosting.wordpress.com/">Laughing Squid Web Hosting News & Status blog</a>.
-Version: 1.4
+Version: 1.5
 Author: Shelby DeNike
 Author URI: http://www.sd3labs.com
 */
@@ -63,12 +63,10 @@ add_action('wp_dashboard_setup', 'ls_rss_add_dashboard_widget');
 
 # Custom Laughing Squid Menu
 class LSHostingMenu {
-
 	function LSHostingMenu() {
 		add_action( 'admin_bar_menu', array( $this, "lshosting_links" ), 31 );
 	}
-	function add_root_menu($name, $id, $href = FALSE)
-	{
+	function add_root_menu($name, $id, $href = FALSE) {
 		global $wp_admin_bar;
 		if ( !is_super_admin() || !is_admin_bar_showing() )
 		return;
@@ -80,8 +78,7 @@ class LSHostingMenu {
 		'href' => $href ) );
 	}
 
-	function add_sub_menu($name, $link, $root_menu, $id, $meta = FALSE)
-	{
+	function add_sub_menu($name, $link, $root_menu, $id, $meta = FALSE) {
 		global $wp_admin_bar;
 		if ( ! is_super_admin() || ! is_admin_bar_showing() )
 		return;
@@ -95,8 +92,7 @@ class LSHostingMenu {
 		) );
 	}
 
-	function lshosting_links()
-	{
+	function lshosting_links() {
 		$this->add_root_menu( 'Laughing Squid', "lshostingl");
 		$this->add_sub_menu( 'Support', "https://laughingsquid.zendesk.com", "lshostingl", "lshostingls" );
 		$this->add_sub_menu( 'Billing', "https://laughingsquid.freshbooks.com", "lshostingl", "lshostinglb" );
