@@ -3,7 +3,7 @@ Contributors: sdenike
 Donate link: http://sd3labs.com/
 Tags: news, hosting, dashboard, widget
 Requires at least: 3.1
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: trunk
 
 The Laughing Squid Web Hosting News & Status WordPress Dashboard Widget provides status information within your dashboard from Laughing Squid Web Hosting.
@@ -29,6 +29,9 @@ Nope, this is to provide status updates to the <a href="http://laughingsquid.us"
 1. Dashboard Widget in action
 
 == Changelog ==
+
+= 1.6 =
+* Works with WordPress 4.2.2
 
 = 1.5 =
 * Works with WordPress 4.1
